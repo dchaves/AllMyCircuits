@@ -24,9 +24,8 @@ before_install:
   - arm-none-eabi-gcc --version
 
 install:
-  - cd dchaves/AllMyCircuits
-  - git submodule init
-  - git submodule update
+
+
 script:
   - cd examples/bluepill_test
   - make all
