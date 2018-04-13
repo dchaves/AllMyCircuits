@@ -20,7 +20,6 @@ before_install:
   - echo $HOME/.gcc-arm-embedded/*/bin
   - ls $HOME/.gcc-arm-embedded/*/bin
   - export PATH=$HOME/.local/bin:/opt/ghc/$GHCVER/bin:$PATH
-  - ghc --version
   - export PATH="$(echo $HOME/.gcc-arm-embedded/*/bin):$PATH"
   - arm-none-eabi-gcc --version
 
