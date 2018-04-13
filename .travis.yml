@@ -24,6 +24,7 @@ before_install:
   - arm-none-eabi-gcc --version
 
 install:
+  - ls
   - git submodule init
   - git submodule update
 script:
