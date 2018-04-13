@@ -10,13 +10,6 @@ addons:
     packages:
       - gcc-multilib
 
-matrix:
-  include:
-    - env: GHCVER=7.10.3 
-      addons: {apt: {packages: [ghc-7.10.3,gcc-multilib], sources: [hvr-ghc]}}
-    - env: GHCVER=8.0.2 
-      addons: {apt: {packages: [ghc-8.0.2,gcc-multilib], sources: [hvr-ghc]}}
-
 before_install:
   # Set up the ARM GCC toolchain
   - if [ ! -d $HOME/.gcc-arm-embedded/*/bin ];
