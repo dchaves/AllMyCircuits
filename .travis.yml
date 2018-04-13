@@ -24,8 +24,10 @@ before_install:
   - arm-none-eabi-gcc --version
 
 install:
-  - ls
+  - cd dchaves/AllMyCircuits
   - git submodule init
   - git submodule update
 script:
-  - make
+  - cd examples/bluepill_test
+  - make all
+  - make bin
